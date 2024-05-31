@@ -16,20 +16,32 @@
             margin: 20px auto;
             background: #fff;
             padding: 20px;
+            border: 2px solid #333;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
+        h1 {
             text-align: center;
-            color: #333;
-        }
-        h3 {
-            margin-bottom: 10px;
-            color: #666;
-        }
-        .info, .education, .projects, .skills, .activities, .hobbies, .personal {
+            color: #4CAF50;
             margin-bottom: 20px;
         }
-        .info p, .education p, .projects p, .skills p, .activities p, .hobbies p, .personal p {
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .info, .career-objective, .education, .projects, .skills, .activities, .hobbies, .personal, .declaration {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .info p, .career-objective p, .education p, .projects p, .skills p, .activities p, .hobbies p, .personal p, .declaration p {
             margin: 5px 0;
         }
         .info span, .personal span {
@@ -43,6 +55,41 @@
             background: #e9e9e9;
             margin: 5px 0;
             padding: 10px;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .info {
+            background-color: #f9f9f9;
+        }
+        .personal, .declaration {
+            background-color: #f9f9f9;
+        }
+        .skills ul li {
+            background: #d4edda;
+        }
+        .activities ul li {
+            background: #f8d7da;
+        }
+        .hobbies ul li {
+            background: #fff3cd;
         }
     </style>
 </head>
@@ -57,11 +104,11 @@
         </div>
         <div class="career-objective">
             <h3>Career Objective</h3>
-            <p>Seeking challenging and rewarding career in LINUX as a professional where I can contribute my knowledge and skills for growth and development of the organization</p>
+            <p>Seeking challenging and rewarding career in LINUX as a professional where I can contribute my knowledge and skills for growth and development of the organization.</p>
         </div>
         <div class="education">
             <h3>Educational Qualification</h3>
-            <table border="1" cellspacing="0" cellpadding="5">
+            <table>
                 <tr>
                     <th>Examination</th>
                     <th>Institution</th>
@@ -105,7 +152,7 @@
                 <li>Installation of Linux.</li>
                 <li>File system hierarchy in Linux.</li>
                 <li>Editors in Linux e.g. vi & vim.</li>
-                <li>Concept and creation of soft link hard link and inodes.</li>
+                <li>Concept and creation of soft link, hard link, and inodes.</li>
                 <li>Archiving and compressing techniques and their use in Linux environments.</li>
                 <li>Learning the concept and implementation of Run levels.</li>
                 <li>Partitioning hard disk using command line.</li>
